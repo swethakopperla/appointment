@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>make an appointment</title>
+
+<style>
+article {
+    margin-left: 500px;
+    border-left: 1px solid white;
+    padding: 1em;
+    overflow: hidden;
+}
+div.container {
+    width: 100%;
+    border: 1px ;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
+    height: 500px;
+}
+
+
+nav {
+    float: left;
+    max-width: 700px;
+    margin: 0;
+    padding: 1em;
+}
+
+input[type=text], select{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.app
+{
+color:blue;
+}
+	
+button {
+    width: 10%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    resize: vertical;
+}
+input[type=tel]{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=date]{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  
+<nav>
+ <img src="/home/swe/appointment/download.jpeg" alt="Paris" style="width:500px">
+
+</nav>
+
+<article>
+<h1 class="app">Make Appointment</h1>
+<h2>your appointment</h2>
+<form action="action.php" method="get">
+<input type="text" name="name" placeholder="Your name...">
+<input type="text" name="email" placeholder="Your email..">
+<br>
+<input type="tel" name="number" placeholder="Phone number..">
+<input type="date" max="1995-12-31" class="form-control" id="dob"/>
+<br>
+<select>
+  <option value="A&E">A&E</option>
+  <option value="Cardiology">Cardiology</option>
+  <option value="General surgery">General surgery</option>
+  <option value="Neurology" selected>Neurology</option>
+</select>
+<select>
+  <option value="swetha">Dr.Swetha</option>
+  <option value="uma">Dr.Uma</option>
+  <option value="sneha latha">Dr.Sneha latha</option>
+  <option value="hari" selected>Dr.Hari</option>
+</select>
+<textarea rows="7"  name="comment">
+Enter text here...</textarea>
+<br>
+<input type="submit" value="Make an Appointment">
+</form>
+</article>
+
+</div>
+
+</body>
+</html>
+
