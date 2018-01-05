@@ -10,6 +10,7 @@ $dname=$_GET['dname'];
 $text=$_GET['comment'];
 $host="localhost";$user="root";
 $pass="Root@1234";$dbname="appointment";
+  echo $date;
 $conn=mysqli_connect($host,$user,$pass,$dbname);
 if(!$conn)
 die("could not connect to the DB".mysqli_connect_error());
