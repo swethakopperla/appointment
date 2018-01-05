@@ -98,17 +98,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 </style>
-<script>  
-function validate(){  
-var num=document.myform.num.value;  
-if (isNaN(num)){  
-  document.getElementById("numloc").innerHTML="Enter Numeric value only";  
-  return false;  
-}else{  
-  return true;  
-  }  
-}  
-</script>  
 </head>
 <body>
 <div class="container">
@@ -122,7 +111,7 @@ if (isNaN(num)){
 <input type="text" name="name" placeholder="Your name...">
 <input type="text" name="email" placeholder="Your email..">
 <br>
-<input type="text" name="number" placeholder="Phone number.."><span id="numloc"></span>
+<input type="tel" name="number" placeholder="Phone number..">
 <input type="date" name="date" max="2070-12-31" >
 <br>
 <select name="department">
