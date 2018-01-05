@@ -11,6 +11,7 @@ $text=$_GET['comment'];
 $host="localhost";$user="root";
 $pass="Root@1234";$dbname="appointment";
   echo  "date: ".$date."</br>";
+echo  "department: ".$department."</br>";
   echo  "dname:".$dname."</br>";
 $conn=mysqli_connect($host,$user,$pass,$dbname);
 if(!$conn)
