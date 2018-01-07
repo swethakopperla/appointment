@@ -19,7 +19,7 @@ if(!$conn)
 die("could not connect to the DB".mysqli_connect_error());
 else
 echo "connected sucessfully............. <br>";
-$sql="insert into patients values('$name','$email','$number','$date','$department','$dname','$text');";
+$sql="insert into patients(name,email,number,date,department,dname,comment) values('$name','$email','$number','$date','$department','$dname','$text');";
 if(mysqli_query($conn,$sql))
 echo "record sucessfully inserted.......";
 else
