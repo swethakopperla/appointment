@@ -16,7 +16,7 @@ $mail->HOST='server33.hostingraja.in';
 $mail->SMTPAuth=true;
 $mail->Userame='admin@itblabs.com';
 $mail->Password='itblabs@1234';
-$mail->SMTPSecure="tls";
+$mail->SMTPSecure="ssl";
 $mail->Port='465';
 
 
