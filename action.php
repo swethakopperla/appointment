@@ -19,12 +19,15 @@ if(!$conn)
 die("could not connect to the DB".mysqli_connect_error());
 else
 echo "connected sucessfully............. <br>";
-	$sql = "CREATE TABLE MyGuests (
+	$sql = "CREATE TABLE patients  (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-reg_date TIMESTAMP
+name VARCHAR(30) NOT NULL,
+email VARCHAR(30) NOT NULL,
+number VARCHAR(15) not null,
+date date not null,
+department varchar(30) not null,
+dname varchar(30) not null,
+comment varchar(50)
 )";
 
 if (mysqli_query($conn, $sql)) {
@@ -41,7 +44,8 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$sql="insert into patients(name,email,number,date,department,dname,comment) values('$name','$email','$number','$date','$department','$dname','$text');";
+$sql="insert into patients (name,email,number,date,department,dname,comment) 
+ values('$name','$email','$number','$date','$department','$dname','$text');";
 if(mysqli_query($conn,$sql))
 echo "record sucessfully inserted.......";
 else
