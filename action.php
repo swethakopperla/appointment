@@ -30,6 +30,8 @@ dname varchar(30) not null,
 comment varchar(50)
 )";
 
+echo "<br>";
+
 if (mysqli_query($conn, $sql)) {
     echo "Table MyGuests created successfully";
 } else {
@@ -44,12 +46,24 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+echo "<br>";
 $sql="insert into patients (name,email,number,date,department,dname,comment) 
  values('$name','$email','$number','$date','$department','$dname','$text');";
 if(mysqli_query($conn,$sql))
 echo "record sucessfully inserted.......";
 else
 echo "could not insert record:".mysqli_error($conn);
+
+echo "<br>";
+//$to = "yugandhar@itblabs.com";
+$subject = "Test mail";
+$message = "Hello! This is a simple email message.";
+$from = "swetha.k@itblabs.com";
+$headers = "From: $from";
+mail($email,$subject,$message,$headersi,"-f".$from);
+echo "Mail Sent.";
+
+
 mysqli_close($conn);
 ?>
 </body>
