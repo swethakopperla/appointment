@@ -24,7 +24,7 @@ id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
 email VARCHAR(30) NOT NULL,
 number VARCHAR(15) not null,
-date date not null,
+date date not null UNIQUE,
 department varchar(30) not null,
 dname varchar(30) not null,
 comment varchar(50)
