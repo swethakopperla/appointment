@@ -57,7 +57,7 @@ $subject = "Test mail";
 $message = "your appointmented on your give date".$date;
 $from = "swetha.k@itblabs.com";
 $headers = "From: $from";
-mail($email,$subject,$message,$headersi,"-f".$from);
+mail($email,$subject,$message,$headers,"-f".$from);
 echo "Mail Sent.";
 }
 else{
@@ -69,7 +69,7 @@ $subject = "Test mail";
 $message = "your not appointmented on your given date!! ".$date."   fix another date";
 $from = "swetha.k@itblabs.com";
 $headers = "From: $from";
-mail($email,$subject,$message,$headersi,"-f".$from);
+mail($email,$subject,$message,$headers,"-f".$from);
 echo "Mail Sent.";
 
 }
